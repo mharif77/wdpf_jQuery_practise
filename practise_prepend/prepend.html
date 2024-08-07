@@ -13,16 +13,19 @@
         <li>rangpur</li>
         <li>sherpur</li>
     </ul>
+    
     <button id="btn1">append</button>
     <button id="btn2">prepend</button>
     <script>
-    $(document).ready(function () {
-    $("#btn1").click(function(){
-        $("ul").append("<li>madaripur</li>");
-    })
-    
-    
-    });
+        $(document).ready(function () {
+            $("#btn1").click(function(){
+                $("ul").append("<li>madaridpur</li>");
+            })
+            $("#btn2").click(function(){
+                $("ul").prepend("<li>faridpur</li>");
+            })
+        });
     </script>
+    
 </body>
 </html>
