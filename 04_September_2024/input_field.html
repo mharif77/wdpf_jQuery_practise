@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.7.1.min.js"></script>
+</head>
+<body>
+   
+    <form action="">
+       name : <input type="text" placeholder="Enter your name"><br>
+       Father's name : <input type="text" placeholder="Enter your father's name">
+    </form>
+    
+    <script>
+     $(document).ready(function () {
+        $("input").focus(function(){
+            $(this).css("background-color","yellow");
+
+        })
+        $("input").blur(function(){
+            $(this).css("background-color","coral");
+        })
+     });
+    </script>
+
+</body>
+</html>

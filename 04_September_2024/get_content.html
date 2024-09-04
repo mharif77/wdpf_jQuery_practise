@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.7.1.min.js"></script>
+</head>
+<body>
+    <p id="para1">Hello <br> World</p>
+    <button id="btn1">click Here</button>
+
+    <h1></h1>
+    <!-- <form action="">
+        <input type="text" placeholder="Enter your firstname"><br>
+        <input type="text" placeholder="Enter your lastname"><br>
+        <button type="button">click here</button>
+
+    </form> -->
+   
+    <script>
+        $(document).ready(function () {
+            $("#btn1").click(function(){
+                let content = $("#para1").html();
+                $("h1").html(content);
+                // alert("content");
+            })
+        });
+    </script>
+
+</body>
+</html>
