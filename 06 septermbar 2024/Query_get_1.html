@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.7.1.min.js"></script>
+</head>
+<body>
+    <form action="">
+        <select name="id" id="tt">
+            <option value="">select one</option>
+            <option value="1">dhaka</option>
+            <option value="2">cumilla</option>
+            <option value="3">gazipur</option>
+            <option value="4">sherpur</option>
+        </select><br><br>
+        <button id="btn1" type="button">Click here</button>
+    </form>
+    <div id="show"></div>
+    <script>
+    $(document).ready(function () {
+        $("#btn1").click(function(){
+         let tt_id = $("#tt").val();
+               
+         $.get("get_data.php",{id:tt_id}, function (data, st) {
+                    // alert(data + st);
+                    $("#show").html(data)
+                })
+            
+        })
+    });
+    </script>
+</body>
+</html>

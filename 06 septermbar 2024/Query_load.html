@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.7.1.min.js"></script>
+</head>
+<body>
+    <div id="show">Data will load</div>
+    <button id="btn1">Click to load</button>
+    <script>
+        $(document).ready(function () {
+            $("#btn1").click(function(){
+                $("#show").load("data.txt")
+            })
+        });
+    </script>
+</body>
+</html>
